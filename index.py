@@ -9,13 +9,24 @@ from app import server
 # LAYOUT
 app.layout = html.Div(
     children=[
+        # URL
         dcc.Location(id='url', refresh=False),
 
         # NAVBAR
-        dbc.Row(),
+        dbc.Row(
+            className='navbar',
+            children=[
+                dbc.Col(),    # company name
+                dbc.Col(),    # page links
+                dbc.Col(),    # company logo (right justified)
+            ]
+        ),
 
         # PAGE CONTENT
-        dbc.Row(),
+        dbc.Row(
+            className='page-content',
+            children=[]
+        ),
     ]
 )
 
@@ -36,5 +47,8 @@ if __name__ == '__main__':
 
 # TODO
 # Create navbar
-# Add CSS / styling sheet plan
-# Add pages...
+# Add performance page
+# Add coin comparison page
+# Add revenue / interest page
+# Add other pages...
+# Link to website...
