@@ -1,48 +1,65 @@
 /*Fonts ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #F3F4F9;
-    font-family: 'Roboto';
-    color: #203cb3;
-  }
+/* MAIN PAGE CONTAINERS */
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #F3F4F9;
+  font-family: 'Roboto';
+  color: #203cb3;
+}
 
+.page-container {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-color:#97BAEC;
+}
+
+/* NAVBAR */
 .navbar {
-    background-color: rgb(2,21,70);
-    margin: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-family: 'Roboto';
-    color: white;
+  background-color: rgb(2,21,70);
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: 'Roboto';
+  color: white;
 }
 
 .navbar-title-link {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-first-link {
-    display: inline-block;
-    padding-left: 0px;
-    color: white;
+  display: inline-block;
+  padding-left: 0px;
+  color: white;
 }
 
 .navbar-link {
-    display: inline-block;
-    padding-left: 15px;
-    color: white;
+  display: inline-block;
+  padding-left: 15px;
+  color: white;
 }
 
 .navbar-logo{
-    display: inline-block;
-    float: right;
-  }
+  display: inline-block;
+  float: right;
+}
 
-.page-content {
-    background-color: red;
+/* PAGE CONTENTS */
+.page-content-title {
+  color: rgb(2,21,70);
+  text-align: center;
+}
+
+.page-content-description {
+  margin-bottom: 25px;
+  color: rgb(2,21,70);
+  text-align: center;
 }
