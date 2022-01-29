@@ -57,21 +57,21 @@ fig.update_yaxes(title_text='yaxis 2', secondary_y=True)
 layout = [
     dbc.Row(
         children=[
-            html.H3(className='page-content-title', children='Page Title'),
+            html.H3(className='page-content-title', children='Additional Custom Pages ...'),
         ]
     ),
     dbc.Row(
         children=[
-            html.P(className='page-content-description', children='Page description.'),
+            html.P(className='page-content-description', children='Add and subtract pages to fit your needs!'),
         ]
     ),
     dbc.Row(
         children=[
             dbc.Col(
-                dcc.Graph(
-                    id='page-content-graph',
-                    figure=go.Figure()
-                ),
+                # dcc.Graph(
+                #     id='page-content-graph',
+                #     figure=go.Figure()
+                # ),
                 width={'size': 10, 'offset': 1}
             )
         ]
