@@ -88,12 +88,13 @@ if __name__ == '__main__':
 #   Recreate the 7 metrics from my excel sheet here
 # Page 3 - Revenue
 #   Show annualized interest being earned for each coin
-# Page 4 - Coin Comparator
-#   implement cloud api's...
+# Page 4 - Research
 #   Coingecko api -> get market cap, volume, etc.
 #   Deribit api -> get derivatives dat
 #   Glassnode api -> get OHLC for BTC, ETH, other example coins
-#   Select any coin you are holding and toggle on BTC / ETH price action
+#   Implement as cloud functions
+#   Put on cloud scheduler, run automatically at 1 day intervals
+#   Create plot to compare any coins
 #
 # Connect github
 # Connect to portfolio website, relaunch on host gator
