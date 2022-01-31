@@ -37,6 +37,7 @@ market_api_calls = {
     'aave_price_usd_ohlc': {'a': 'AAVE', 's': '1230789600', 'u': int(time.time()), 'i': '24h', 'f': 'json', 'timestamp_format': 'unix'},
     'matic_price_usd_ohlc': {'a': 'MATIC', 's': '1230789600', 'u': int(time.time()), 'i': '24h', 'f': 'json', 'timestamp_format': 'unix'},
     'sushi_price_usd_ohlc': {'a': 'SUSHI', 's': '1230789600', 'u': int(time.time()), 'i': '24h', 'f': 'json', 'timestamp_format': 'unix'},
+    'btc_marketcap_usd': {'a': 'BTC', 's': '1230789600', 'u': int(time.time()), 'i': '24h', 'f': 'json', 'timestamp_format': 'unix'},
 }
 api_dict = {
     market_prefix: market_api_calls,
@@ -54,7 +55,10 @@ def glassnode_api():
             # Get data
             print('Getting data...')
             try:
-                url = 'https://api.glassnode.com/v1/metrics/' + prefix + '/price_usd_ohlc'
+                if 'ohlc' in endpoint:
+                    url = 'https://api.glassnode.com/v1/metrics/' + prefix + '/price_usd_ohlc'
+                else:
+                    url = 'https://api.glassnode.com/v1/metrics/' + prefix + '/marketcap_usd'
                 parameters['api_key'] = secret_string
                 res = requests.get(url, params=parameters)
                 df = pd.DataFrame(res.json())
@@ -64,8 +68,9 @@ def glassnode_api():
             
             # Parse data
             print('Parsing data...')
-            df = df.join(pd.DataFrame(df.pop('o').values.tolist()))
-            df['utc'] = df['t'].apply(lambda x: datetime.datetime.fromtimestamp(x).strftime('%Y-%m-%d %H:%M:%S'))    # utc time
+            if 'ohlc' in endpoint:
+                df = df.join(pd.DataFrame(df.pop('o').values.tolist()))
+            df['utc'] = df['t'].apply(lambda x: datetime.datetime.utcfromtimestamp(x).strftime('%Y-%m-%d %H:%M:%S'))    # utc time
 
             # Output data
             print('Outputting data...')

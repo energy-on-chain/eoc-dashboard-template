@@ -90,11 +90,11 @@ if __name__ == '__main__':
 #   Show annualized interest being earned for each coin
 # Page 4 - Research
 #   Coingecko api -> get market cap, volume, etc.
-#   Deribit api -> get derivatives dat
-#   Glassnode api -> get OHLC for BTC, ETH, other example coins
-#   Implement as cloud functions
-#   Put on cloud scheduler, run automatically at 1 day intervals
-#   Create plot to compare any coins
+#   Deribit api -> get derivatives data... funding rate and one more thing to plot against each other as options
+#   Glassnoes -> get another interesting, free metric to plot
+#   Move CG, DB, GN to cloud functions
+#   Setup google scheduler at 1 day interval
+#   Create layout (plot with checkboxes for BTC, ETH... then dropdown for other coins)
 #
-# Connect github
+# Connect github to google cloud
 # Connect to portfolio website, relaunch on host gator
