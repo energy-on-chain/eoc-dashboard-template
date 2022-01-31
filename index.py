@@ -89,9 +89,7 @@ if __name__ == '__main__':
 # Page 3 - Revenue
 #   Show annualized interest being earned for each coin
 # Page 4 - Research
-#   Coingecko api -> get market cap, volume, etc.
-#   Deribit api -> get derivatives data... funding rate and one more thing to plot against each other as options
-#   Glassnoes -> get another interesting, free metric to plot
+#   Coingecko api -> get market cap, volume, current price
 #   Move CG, DB, GN to cloud functions
 #   Setup google scheduler at 1 day interval
 #   Create layout (plot with checkboxes for BTC, ETH... then dropdown for other coins)
