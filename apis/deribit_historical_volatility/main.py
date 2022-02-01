@@ -68,8 +68,7 @@ def get_data(currency):
     return res
 
 
-def deribit_historical_volatility():
-# def deribit_historical_volatility(event, context):
+def deribit_historical_volatility(event, context):
 # def deribit_historical_volatility():
     print('Fetching deribit historical volatility data...')
 

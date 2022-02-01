@@ -45,8 +45,8 @@ api_dict = {
 
 
 # FUNCTION
-def glassnode_api():
-# def glassnode_api(event, context):
+def glassnode_api(event, context):
+# def glassnode_api():
     for prefix, api_call_list in api_dict.items():
         print('Fetching glassnode data...')
         for endpoint, parameters in api_call_list.items():

@@ -32,7 +32,6 @@ interval = 'daily'
 
 # FUNCTION
 def coingecko_api():
-# def coingecko_api(event, context):
     for coin in coin_list:
         print('Fetching coingecko data for ' + coin + '...')
 

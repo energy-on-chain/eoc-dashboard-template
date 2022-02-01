@@ -89,10 +89,9 @@ if __name__ == '__main__':
 # Page 3 - Revenue
 #   Show annualized interest being earned for each coin
 # Page 4 - Research
-#   Coingecko api -> get market cap, volume, current price
-#   Move CG, DB, GN to cloud functions
-#   Setup google scheduler at 1 day interval
+#   Move DB, GN to cloud functions, setup scheduler
 #   Create layout (plot with checkboxes for BTC, ETH... then dropdown for other coins)
 #
 # Connect github to google cloud
+# Deploy as app instance
 # Connect to portfolio website, relaunch on host gator
