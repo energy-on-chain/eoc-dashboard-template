@@ -1,3 +1,4 @@
+import json
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
@@ -5,6 +6,27 @@ import dash_bootstrap_components as dbc
 from app import app
 from app import server
 from pages import p0_page_template, p1_holdings, p2_performance, p3_revenue, p4_research
+from google.oauth2 import service_account
+from google.cloud import storage
+from google.cloud import secretmanager
+
+
+# CREDENTIALS
+project_id = "eoc-template"
+client = secretmanager.SecretManagerServiceClient()
+
+secret_service_acct_key = "EOC_TEMPLATE_SERVICE_ACCOUNT_KEY"    # service account access
+secret_service_acct_key_request = {"name": f"projects/{project_id}/secrets/{secret_service_acct_key}/versions/latest"}
+secret_service_acct_key_response = client.access_secret_version(secret_service_acct_key_request)
+secret_service_acct_key_json = secret_service_acct_key_response.payload.data.decode("UTF-8")
+secret_service_acct_key_creds = service_account.Credentials.from_service_account_info(json.loads(secret_service_acct_key_json))
+
+storage_client = storage.Client(credentials=secret_service_acct_key_creds)    # google cloud storage
+
+secret_api_key = "EOC_GLASSNODE_API_KEY"    # api key
+request = {"name": f"projects/{project_id}/secrets/{secret_api_key}/versions/latest"}
+response = client.access_secret_version(request)
+secret_string = response.payload.data.decode("UTF-8")
 
 
 # LAYOUT
