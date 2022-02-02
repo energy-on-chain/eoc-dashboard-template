@@ -74,8 +74,8 @@ def get_data(instrument_name, start_time, end_time):
     return res
 
 
-def deribit_funding_rate(event, context):
-# def deribit_funding_rate():
+def deribit_funding_rate_api(event, context):
+# def deribit_funding_rate_api():
     print('Fetching deribit funding rate data...')
 
     # Get old data 
@@ -117,4 +117,4 @@ def deribit_funding_rate(event, context):
 
 
 if __name__ == '__main__':
-    deribit_funding_rate()
+    deribit_funding_rate_api()

@@ -89,7 +89,7 @@ if __name__ == '__main__':
 # Page 3 - Revenue
 #   Show annualized interest being earned for each coin
 # Page 4 - Research
-#   Move DB, GN to cloud functions, setup scheduler
+#   Convert to scheduled cloud functions
 #   Create layout (plot with checkboxes for BTC, ETH... then dropdown for other coins)
 #
 # Connect github to google cloud
