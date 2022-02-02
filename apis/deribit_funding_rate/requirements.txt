@@ -61,8 +61,8 @@ tenacity==8.0.1
 typing-inspect==0.7.1
 typing_extensions==4.0.1
 urllib3==1.26.8
-websocket==0.2.1
-websocket-client==1.2.3
+websocket-client
+websocket
 Werkzeug==2.0.2
 yarl==1.7.2
 zope.event==4.5.0
