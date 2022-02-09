@@ -101,18 +101,20 @@ if __name__ == '__main__':
 
 # TODO
 # Page 1 - Holdings
-#   Table showing the coins you hold
-#   Connect coingecko
-#   Populate table... bag size, cost basis, gains, losses, ROI, ath drawdown
-#   Refresh button
-#   Pulldown csv button
+#   Table showing bags, cost basis, gain/loss, ROI, ath drawdown, APY% (read in from excel file)
+#   Button to refresh market prices from coin gecko
+#   Button to download the table into a csv
+#   Place for (user?) to create email notifications when certain levels are reached
 # Page 2 - Performance
-#   Recreate the 7 metrics from my excel sheet here
+#   Recreate the 7 performance metrics from my excel sheet here
 # Page 3 - Revenue
-#   Show annualized interest being earned for each coin
-# Page 4 - Research
+#   Show annualized and monthly interest based on coin APY's
+# Page 4 - Research (Spot)
 #   Convert to scheduled cloud functions
+#   Revise explanation
 #   Create layout (plot with checkboxes for BTC, ETH... then dropdown for other coins)
+# Page 5 - Research (Derivatives)
+#   Plot Deribit lines over each other
 #
 # Connect github to google cloud
 # Deploy as app instance
