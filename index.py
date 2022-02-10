@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 from app import app
 from app import server
-from pages import p0_page_template, p1_holdings, p2_performance, p3_revenue, p4_research
+from pages import p0_page_template, p1_holdings, p2_performance, p3_revenue, p4_spot, p5_derivatives
 from google.oauth2 import service_account
 from google.cloud import storage
 from google.cloud import secretmanager
@@ -52,9 +52,11 @@ app.layout = dbc.Container(
                         html.A(className='navbar-first-link', children='Holdings', href='/p1_holdings'),
                         html.A(className='navbar-link', children='Performance', href='/p2_performance'),
                         html.A(className='navbar-link', children='Revenue', href='/p3_revenue'),
-                        html.A(className='navbar-link', children='Research', href='/p4_research'),
-                        html.A(className='navbar-link', children='Customize', href='/p0_page_template'),
-                    ]
+                        html.A(className='navbar-link', children='Spot', href='/p4_spot'),
+                        html.A(className='navbar-link', children='Derivatives', href='/p5_derivatives'),
+                        html.A(className='navbar-link', children='Custom', href='/p0_page_template'),
+                    ],
+                    width='auto'
                 ), 
                 dbc.Col(
                     children=[
@@ -87,8 +89,10 @@ def update_page(pathname):
         return p2_performance.layout
     elif pathname == '/p3_revenue':
         return p3_revenue.layout
-    elif pathname == '/p4_research':
-        return p4_research.layout
+    elif pathname == '/p4_spot':
+        return p4_spot.layout
+    elif pathname == '/p5_derivatives':
+        return p5_derivatives.layout
     elif pathname == '/p0_page_template':
         return p0_page_template.layout
     else:
@@ -109,13 +113,7 @@ if __name__ == '__main__':
 #   Recreate the 7 performance metrics from my excel sheet here
 # Page 3 - Revenue
 #   Show annualized and monthly interest based on coin APY's
-# Page 4 - Research (Spot)
-#   Convert to scheduled cloud functions
-#   Revise explanation
-#   Create layout (plot with checkboxes for BTC, ETH... then dropdown for other coins)
-# Page 5 - Research (Derivatives)
-#   Plot Deribit lines over each other
-#
-# Connect github to google cloud
 # Deploy as app instance
-# Connect to portfolio website, relaunch on host gator
+# Add to portfolio website
+# Relaunch EOC website on host gator
+# Move on to DApps

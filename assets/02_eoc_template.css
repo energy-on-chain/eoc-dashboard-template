@@ -63,3 +63,9 @@ body {
   color: rgb(2,21,70);
   text-align: center;
 }
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: rgb(2,21,70) !important;
+  border-color: rgb(2,21,70) !important;
+  font-family: 'Roboto' !important;
+}
