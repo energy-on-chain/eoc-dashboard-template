@@ -105,14 +105,13 @@ if __name__ == '__main__':
 
 # TODO
 # Page 1 - Holdings
-#   Table showing bags, cost basis, gain/loss, ROI, ath drawdown, APY% (read in from excel file)
-#   Button to refresh market prices from coin gecko
-#   Button to download the table into a csv
-#   Place for (user?) to create email notifications when certain levels are reached
 # Page 2 - Performance
 #   Recreate the 7 performance metrics from my excel sheet here
 # Page 3 - Revenue
 #   Show annualized and monthly interest based on coin APY's
+#   Make the cells for apy, stack editable
+#   Add graph
+#   Update button for coingecko
 # Deploy as app instance
 # Add to portfolio website
 # Relaunch EOC website on host gator

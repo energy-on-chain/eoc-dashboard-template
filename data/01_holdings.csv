@@ -1,10 +1,8 @@
-﻿Coin,Symbol,Num. Coins,All-in #,Cost Basis
-Bitcoin,BTC,1," $25,000.00 "," $25,000.00 "
-Ethereum,ETH,25," $25,000.00 "," $1,000.00 "
-Hex,HEX,250000," $5,000.00 ", $0.020 
-Polkadot,DOT,1000," $10,000.00 ", $10.00 
-Kusama,KSM,100," $5,000.00 ", $50.00 
-Solana,SOL,200," $10,000.00 ", $50.00 
-Luna,LUNA,150," $5,000.00 ", $33.33 
-Fantom,FTM,5000," $5,000.00 ", $1.00 
-USDC Stablecoin,USDC,10000," $10,000.00 ", $1.00 
+﻿Coin,Symbol,# of Coins,All-in # ($),Cost Basis ($),APY%,Custodian
+Bitcoin,BTC,1,25000.00,25000.00,6%,Celsius
+Ethereum,ETH,25,25000.00,1000.00,6%,Celsius
+Litecoin,LTC,100,5000.00,50.00,24%,Fearless
+Sushi,SUSHI,200,10000.00,50.00,4%,Exodus
+Aave,AAVE,150,5000.00,33.33,0%,Ledger
+Matic-network,MATIC,5000,5000.00,1.00,66%,Spooky Swap
+Usd-coin,USDC,10000,10000.00,1.00,15%,Orion
