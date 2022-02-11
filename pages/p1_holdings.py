@@ -23,10 +23,6 @@ from apis.coingecko.coingecko_api import coingecko_api
 
 
 # DATA
-# TODO: connect data
-
-
-# HELPERS
 def build_table_data():
     
     portfolio_df = pd.read_csv('data/01_holdings.csv')    # get private portfolio data from csv (option to store on cloud)
@@ -163,10 +159,7 @@ def update_holdings_table(n_clicks):
 )
 def download_holdings_csv(n_clicks):
     df = build_table_data()
-    return dcc.send_data_frame(df.to_csv(index=False), "holdings_table.csv")
+    return dcc.send_data_frame(df.to_csv, "holdings_table.csv")
+
 
 # TODO
-# display as currency
-# Column order
-# make editable... which cols, how will save / refresh work, add permissions
-# add email notification feature for level alerts

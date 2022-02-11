@@ -1,8 +1,8 @@
 ﻿Coin,Symbol,# of Coins,All-in # ($),Cost Basis ($),APY%,Custodian
-Bitcoin,BTC,1,25000.00,25000.00,6%,Celsius
-Ethereum,ETH,25,25000.00,1000.00,6%,Celsius
-Litecoin,LTC,100,5000.00,50.00,24%,Fearless
-Sushi,SUSHI,200,10000.00,50.00,4%,Exodus
-Aave,AAVE,150,5000.00,33.33,0%,Ledger
-Matic-network,MATIC,5000,5000.00,1.00,66%,Spooky Swap
-Usd-coin,USDC,10000,10000.00,1.00,15%,Orion
+Bitcoin,BTC,1,25000,25000,6.5,Celsius
+Ethereum,ETH,25,25000,1000,5.3,Celsius
+Litecoin,LTC,100,5000,50,0,Fearless
+Sushi,SUSHI,200,10000,50,13.67,Exodus
+Aave,AAVE,150,5000,33.33,3.4,Ledger
+Matic-network,MATIC,5000,5000,1,67.9,Spooky Swap
+Usd-coin,USDC,10000,10000,1,15.3,Orion

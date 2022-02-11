@@ -104,15 +104,12 @@ if __name__ == '__main__':
 
 
 # TODO
-# Page 1 - Holdings
 # Page 2 - Performance
 #   Recreate the 7 performance metrics from my excel sheet here
-# Page 3 - Revenue
-#   Show annualized and monthly interest based on coin APY's
-#   Make the cells for apy, stack editable
-#   Add graph
-#   Update button for coingecko
+# Make revenue table editable / dynamic updates
+# Make holdings table editable / dynamic updates
+# Add example notification levels (even if it's not connected fully)
 # Deploy as app instance
-# Add to portfolio website
+# Add to portfolio website "lightweight", "fully customized"
 # Relaunch EOC website on host gator
 # Move on to DApps
