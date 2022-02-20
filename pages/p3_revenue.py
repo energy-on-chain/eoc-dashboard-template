@@ -196,7 +196,7 @@ layout = [
 ]
 
 @app.callback(
-    # Output('revenue-graph', 'figure'), 
+    Output('revenue-graph', 'figure'), 
     Output('revenue-table', 'data'), 
     Output('yearly-total', 'children'), 
     Output('monthly-total', 'children'), 
@@ -209,12 +209,13 @@ def update_revenue(n_clicks):
     
     else:
         data = build_table_data()
+        figure = build_figure(data)
 
         yearly = html.H6(children='Yearly Income ($): ' + str(round(data['Yearly ($)'].sum(), 2)))    # calc summary metrics
         monthly = html.H6(children='Monthly Income ($): ' + str(round(data['Monthly ($)'].sum(), 2)))
         daily = html.H6(children='Daily Income: ' + str(round(data['Daily ($)'].sum().sum(), 2)))
 
-        return data.to_dict('records'), yearly, monthly, daily
+        return figure, data.to_dict('records'), yearly, monthly, daily
 
 @app.callback(
     Output("revenue-download", "data"),

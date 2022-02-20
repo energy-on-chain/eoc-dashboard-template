@@ -1,8 +1,8 @@
-﻿Coin,Symbol,# of Coins,All-in # ($),Cost Basis ($),APY%,Custodian
-Bitcoin,BTC,1,25000,25000,6.5,Celsius
-Ethereum,ETH,25,25000,1000,5.3,Celsius
-Litecoin,LTC,100,5000,50,0,Fearless
-Sushi,SUSHI,200,10000,50,13.67,Exodus
-Aave,AAVE,150,5000,33.33,3.4,Ledger
-Matic-network,MATIC,5000,5000,1,67.9,Spooky Swap
-Usd-coin,USDC,10000,10000,1,15.3,Orion
+﻿Coin,Symbol,Network,# of Coins,All-in # ($),Cost Basis ($),APY%,Custodian
+Bitcoin,BTC,Bitcoin,1,25000,25000,6.5,Celsius
+Ethereum,ETH,Ethereum,25,25000,1000,5.3,Celsius
+Litecoin,LTC,Litecoin,100,5000,50,0,Fearless
+Sushi,SUSHI,Ethereum,200,10000,50,13.67,Exodus
+Aave,AAVE,Ethereum,150,5000,33.33,3.4,Ledger
+Matic-network,MATIC,Matic,5000,5000,1,67.9,Spooky Swap
+Usd-coin,USDC,Ethereum,10000,10000,1,15.3,Orion

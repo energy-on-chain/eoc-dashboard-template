@@ -82,7 +82,7 @@ app.layout = dbc.Container(
               [Input('url', 'pathname')])
 def update_page(pathname):
     if pathname == '/':
-        return index.layout
+        return p1_holdings.layout
     elif pathname == '/p1_holdings':
         return p1_holdings.layout
     elif pathname == '/p2_performance':
@@ -104,12 +104,12 @@ if __name__ == '__main__':
 
 
 # TODO
-# Page 2 - Performance
-#   Recreate the 7 performance metrics from my excel sheet here
+# finish page 2 style, content
+# Deploy as app instance
+# Add to portfolio website "lightweight", "fully customized", "notificaitons of level alerts, etc"
+# Relaunch EOC website on host gator
+# sign up for GC on EOC account
+# Move on to DApps
 # Make revenue table editable / dynamic updates
 # Make holdings table editable / dynamic updates
 # Add example notification levels (even if it's not connected fully)
-# Deploy as app instance
-# Add to portfolio website "lightweight", "fully customized"
-# Relaunch EOC website on host gator
-# Move on to DApps

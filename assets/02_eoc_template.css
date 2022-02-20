@@ -70,3 +70,7 @@ body {
   border-color: rgb(2,21,70) !important;
   font-family: 'Roboto' !important;
 }
+
+.pie-chart {
+  background-color:#97BAEC;
+}
