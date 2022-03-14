@@ -13,7 +13,6 @@ from google.cloud import secretmanager
 
 
 # CREDENTIALS
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'eoc-template-384a7a26197d.json'
 project_id = "eoc-template"
 client = secretmanager.SecretManagerServiceClient()
 
