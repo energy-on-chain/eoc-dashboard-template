@@ -104,12 +104,11 @@ if __name__ == '__main__':
 
 
 # TODO
-# finish page 2 style, content
 # Deploy as app instance
 # Add to portfolio website "lightweight", "fully customized", "notificaitons of level alerts, etc"
 # Relaunch EOC website on host gator
-# sign up for GC on EOC account
 # Move on to DApps
+# Pitch energy / financial services clientssd
 # Make revenue table editable / dynamic updates
 # Make holdings table editable / dynamic updates
 # Add example notification levels (even if it's not connected fully)
