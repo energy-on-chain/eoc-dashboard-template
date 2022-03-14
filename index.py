@@ -14,21 +14,7 @@ from google.cloud import secretmanager
 
 # CREDENTIALS
 project_id = "eoc-template"
-client = secretmanager.SecretManagerServiceClient()
-
-# secret_service_acct_key = "EOC_TEMPLATE_SERVICE_ACCOUNT_KEY"    # service account access
-# secret_service_acct_key_request = {"name": f"projects/{project_id}/secrets/{secret_service_acct_key}/versions/latest"}
-# secret_service_acct_key_response = client.access_secret_version(secret_service_acct_key_request)
-# secret_service_acct_key_json = secret_service_acct_key_response.payload.data.decode("UTF-8")
-# secret_service_acct_key_creds = service_account.Credentials.from_service_account_info(json.loads(secret_service_acct_key_json))
-
-# storage_client = storage.Client(credentials=secret_service_acct_key_creds)    # google cloud storage
 storage_client = storage.Client()
-
-secret_api_key = "EOC_GLASSNODE_API_KEY"    # api key
-request = {"name": f"projects/{project_id}/secrets/{secret_api_key}/versions/latest"}
-response = client.access_secret_version(request)
-secret_string = response.payload.data.decode("UTF-8")
 
 
 # LAYOUT
