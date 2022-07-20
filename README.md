@@ -1,7 +1,7 @@
 # Welcome to "eoc-dashboard-template"!
 
 ## [ DESCRIPTION ]
-This repo contains the boiler plate python and web3 code for automatically pulling crytpo data from the web, storing it in the cloud, and displaying it realtime via your web browser. In addition to being interactive, it has great extensibility when it comes to quickly adding new ways to view your unique portfolio or information.
+This repo contains the boiler plate python code for automatically pulling crytpo data from the web, storing it in the cloud, and displaying it realtime via your web browser. In addition to being interactive, it has great extensibility when it comes to quickly adding new ways to view your unique portfolio or information.
 
 Click here to visit ->  https://eoc-template.uc.r.appspot.com/
 
