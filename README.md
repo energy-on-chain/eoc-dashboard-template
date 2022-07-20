@@ -18,3 +18,4 @@ Click here to visit the example site ->  https://eoc-template.uc.r.appspot.com/
 
 ## [ SCREENSHOT OF EXAMPLE DASHBOARD ]
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/energy-on-chain/eoc-python-dashboard/blob/main/eoc-dash-template-screenshot.png?raw=true)
