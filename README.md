@@ -14,7 +14,7 @@ I started building a crypto portfolio web app to better understand my own holdin
 This project was one of the first ones that got my feet wet with using Google Cloud services. In addition to pulling crypto API data on an automated schedule and storing it in the cloud, I also got to play around with deploying the web app as an App Instance. Overall, this increased my skills substantially when it came to integrating applications with cloud services. This current boilder plate code repo reflects the changes that I wanted to make after creating the initial application in order to make the cloud integration more seamless. It will keep getting better as more dashboards get built and more lessons are learned!
 
 ## [ LINK TO EXAMPLE DASHBOARD ]
-https://eoc-template.uc.r.appspot.com/
+Click here to visit the example site ->  https://eoc-template.uc.r.appspot.com/
 
 ## [ SCREENSHOT OF EXAMPLE DASHBOARD ]
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
